@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const apiUrl = "https://firman-rfid.000webhostapp.com/api";
+  const apiUrl = "http://localhost/IoT_Project_RFID/api";
   const dataTable = document.querySelector("#data-table tbody");
   const refreshDataButton = document.getElementById("refresh-data");
   const deleteAllButton = document.getElementById("delete-all");
@@ -31,10 +31,10 @@ document.addEventListener("DOMContentLoaded", function () {
                     <td>${item.updatedAt}</td>
                     <td>
                     <div class="btn-delete">
-                        <button onclick="deleteData(${item.id})"><i class='bx bxs-message-square-x' ></i></button>
+                        <button onclick="deleteData(${item.id})"><i class='bx bx-trash'></i></button>
                     </div>
                     <div class="btn-edit">
-                        <button onclick="editData(${item.id}, '${item.tag}')"><i class='bx bxs-edit-alt'></i></button>
+                        <button onclick="editData(${item.id}, '${item.tag}')"><i class='bx bx-edit' ></i></button>
                     </div>
                     </td>
                 `;
