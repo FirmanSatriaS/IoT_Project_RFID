@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const apiUrl = "http://localhost/IoT_Project_RFID/api";
+  const apiUrl = "https://firman-rfid.000webhostapp.com/api";
   const dataTable = document.querySelector("#data-table tbody");
   const refreshDataButton = document.getElementById("refresh-data");
   const deleteAllButton = document.getElementById("delete-all");
